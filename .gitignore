@@ -1,0 +1,10 @@
+.env
+.venv/
+.venv-py39/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+*.egg-info/
+thread.json
+memory.md
+.DS_Store

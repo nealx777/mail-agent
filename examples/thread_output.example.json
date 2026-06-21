@@ -1,0 +1,59 @@
+{
+  "thread_id": "thread_example123456",
+  "root_subject": "Re: CES sample schedule",
+  "participants": [
+    "Alice <alice@example.com>",
+    "Bob <bob@example.com>",
+    "Support <support@example.com>"
+  ],
+  "message_count": 2,
+  "messages": [
+    {
+      "email_id": "101",
+      "message_id": "<example-001@example.com>",
+      "in_reply_to": null,
+      "references": [],
+      "subject": "CES sample schedule",
+      "from": "Alice <alice@example.com>",
+      "to": [
+        "Support <support@example.com>"
+      ],
+      "cc": [
+        "Bob <bob@example.com>"
+      ],
+      "date": "2026-01-05T10:00:00+08:00",
+      "body_text": "Could you confirm the sample delivery date and whether the attached specification is final?",
+      "quoted_text_removed": "unknown",
+      "attachments_metadata": [
+        {
+          "filename": "specification.pdf",
+          "content_type": "application/pdf",
+          "size": 204800,
+          "content_id": null
+        }
+      ]
+    },
+    {
+      "email_id": "102",
+      "message_id": "<example-002@example.com>",
+      "in_reply_to": "<example-001@example.com>",
+      "references": [
+        "<example-001@example.com>"
+      ],
+      "subject": "Re: CES sample schedule",
+      "from": "Bob <bob@example.com>",
+      "to": [
+        "Alice <alice@example.com>",
+        "Support <support@example.com>"
+      ],
+      "cc": [],
+      "date": "2026-01-05T11:00:00+08:00",
+      "body_text": "I can check the specification internally. Support team, please confirm the delivery date.",
+      "quoted_text_removed": "true",
+      "attachments_metadata": []
+    }
+  ],
+  "warnings": [
+    "线程中存在附件；第一版只读取附件元信息，未分析附件内容。"
+  ]
+}
