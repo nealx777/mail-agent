@@ -3,9 +3,9 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "netease-mail-mcp"
+name = "mail-agent"
 version = "0.1.0"
-description = "Local read-only MCP server for NetEase Enterprise Mail thread analysis."
+description = "Local read-only mail analysis MCP server."
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
@@ -19,7 +19,7 @@ test = [
 ]
 
 [project.scripts]
-netease-mail-mcp = "netease_mail_mcp.cli:main"
+mail-agent = "netease_mail_mcp.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

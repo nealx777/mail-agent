@@ -10,7 +10,7 @@ from .reply_tasks import build_extract_reply_tasks_payload
 from .reply_status import get_inbox_reply_status
 from .thread_builder import get_full_thread as build_full_thread
 
-SERVER_NAME = "netease-mail-mcp"
+SERVER_NAME = "mail-agent"
 SERVER_VERSION = "0.1.0"
 SUPPORTED_PROTOCOL_VERSIONS = {"2025-06-18", "2025-03-26", "2024-11-05"}
 
@@ -240,7 +240,7 @@ def handle_message(message: Dict[str, Any]) -> Optional[Dict[str, Any]]:
                 "protocolVersion": protocol_version,
                 "capabilities": {"tools": {"listChanged": False}},
                 "serverInfo": {"name": SERVER_NAME, "version": SERVER_VERSION},
-                "instructions": "网易企业邮箱只读 MCP Server：只搜索、读取和重建邮件线程，不发送、不删除、不移动、不标记邮件。",
+                "instructions": "mail agent 只读 MCP Server：只搜索、读取和重建邮件线程，不发送、不删除、不移动、不标记邮件。",
             },
         )
 

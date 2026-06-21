@@ -104,8 +104,8 @@ def cmd_print_prompt(args) -> None:
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        prog="netease-mail-mcp",
-        description="网易企业邮箱只读 MCP Server 调试 CLI",
+        prog="mail-agent",
+        description="mail agent 只读 MCP Server 调试 CLI",
     )
     subparsers = parser.add_subparsers(dest="command", required=True)
 
